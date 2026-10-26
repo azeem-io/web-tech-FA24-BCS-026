@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Lab 1</title>
+    <style>
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Game Store</h1>
+      <p>PC games and new adventures.</p>
+      <nav>
+        <a href="#featured">Featured games</a>
+        <a href="#categories">Categories</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="featured">
+        <h2>Featured games</h2>
+        <article>
+          <h3>Cyberpunk 2077</h3>
+          <p>An open-world role-playing game set in Night City.</p>
+          <p>Price: $31.99</p>
+        </article>
+        <article>
+          <h3>Ghostwire: Tokyo</h3>
+          <p>Explore Tokyo and face supernatural enemies.</p>
+          <p>Price: $14.99</p>
+        </article>
+      </section>
+
+      <section id="categories">
+        <h2>Categories</h2>
+        <ul>
+          <li>Action</li>
+          <li>Adventure</li>
+          <li>Role-playing</li>
+          <li>Strategy</li>
+        </ul>
+      </section>
+
+      <section id="newsletter">
+        <h2>Newsletter signup</h2>
+        <p>Sign up for game news and offers.</p>
+        <form action="#newsletter" method="get">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <section>
+        <h2>Shop</h2>
+        <ul>
+          <li><a href="#featured">Featured games</a></li>
+          <li><a href="#categories">Game categories</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Help</h2>
+        <ul>
+          <li><a href="mailto:azeemswr.as@gmail.com">Email us</a></li>
+          <li><a href="#newsletter">Newsletter signup</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://www.gog.com/en/">GOG</a></li>
+          <li><a href="https://github.com/azeem-io/web-tech-FA24-BCS-026">Course repository</a></li>
+        </ul>
+        <p>&copy; 2026 Azeem Sarwar</p>
+      </section>
+    </footer>
+  </body>
+</html>

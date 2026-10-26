@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #222;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background: #161616;
+  padding: 16px 0;
+}
+
+.logo {
+  width: 120px;
+  margin: 0;
+}
+
+.menu {
+  justify-content: center;
+}
+
+.cart {
+  width: 120px;
+  text-align: right;
+}
+
+h1 {
+  margin: 32px 0 24px;
+  font-size: 28px;
+}
+
+.game {
+  background: #303030;
+  height: 100%;
+}
+
+.game img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 16px;
+}
+
+.info h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.shop-btn {
+  background: #a4d52b;
+  color: #151515;
+}
+
+.shop-btn:hover {
+  background: #b9e743;
+  color: #151515;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #555;
+  font-size: 14px;
+}
+
+footer a {
+  color: #eee;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    order: 4;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .cart {
+    width: auto;
+  }
+}

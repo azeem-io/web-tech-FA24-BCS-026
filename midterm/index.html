@@ -12,12 +12,118 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand logo" href="index.html">GAME<br>STORE</a>
-          <div class="links">
+          <div class="links desktop-links">
             <a href="index.html#games">GAMES</a>
+            <div class="category">
+              <button class="category-button" type="button">Shop by Category</button>
+              <div class="mega-menu">
+                <div class="container columns">
+                  <section>
+                    <h2>Action</h2>
+                    <ul>
+                      <li><a href="index.html#ghostwire">Ghostwire: Tokyo</a></li>
+                      <li><a href="index.html#cyberpunk">Cyberpunk 2077</a></li>
+                      <li><a href="index.html#neo">NEO</a></li>
+                      <li><a href="index.html#phantom">Phantom Liberty</a></li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h2>Role-playing</h2>
+                    <ul>
+                      <li><a href="index.html#oblivion">Oblivion</a></li>
+                      <li><a href="index.html#octopath">Octopath Traveler</a></li>
+                      <li><a href="index.html#witcher">The Witcher</a></li>
+                      <li><a href="index.html#witcher3">The Witcher 3</a></li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h2>Classics</h2>
+                    <ul>
+                      <li><a href="index.html#witcher">The Witcher</a></li>
+                      <li><a href="index.html#oblivion">Oblivion</a></li>
+                      <li><a href="index.html#games">All games</a></li>
+                      <li><a href="index.html#featured">Featured game</a></li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h2>Explore</h2>
+                    <ul>
+                      <li><a href="index.html#cyberpunk">Night City</a></li>
+                      <li><a href="index.html#ghostwire">Tokyo</a></li>
+                      <li><a href="index.html#witcher3">Fantasy worlds</a></li>
+                      <li><a href="index.html#octopath">Story adventures</a></li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h2>Store</h2>
+                    <ul>
+                      <li><a href="index.html#games">Popular games</a></li>
+                      <li><a href="index.html#deals">Special offers</a></li>
+                      <li><a href="index.html#about">About us</a></li>
+                      <li><a href="index.html#contact">Contact us</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
             <a href="index.html#about">ABOUT</a>
             <a href="#contact">SUPPORT</a>
           </div>
           <span class="cart">&#128722; 0</span>
+          <details class="mobile-nav">
+            <summary class="menu-button">&#9776; Menu</summary>
+            <div class="mobile-links">
+              <a href="index.html#games">Games</a>
+              <h2>Shop by Category</h2>
+                <details>
+                  <summary>Action</summary>
+                  <ul>
+                      <li><a href="index.html#ghostwire">Ghostwire: Tokyo</a></li>
+                      <li><a href="index.html#cyberpunk">Cyberpunk 2077</a></li>
+                      <li><a href="index.html#neo">NEO</a></li>
+                      <li><a href="index.html#phantom">Phantom Liberty</a></li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Role-playing</summary>
+                  <ul>
+                      <li><a href="index.html#oblivion">Oblivion</a></li>
+                      <li><a href="index.html#octopath">Octopath Traveler</a></li>
+                      <li><a href="index.html#witcher">The Witcher</a></li>
+                      <li><a href="index.html#witcher3">The Witcher 3</a></li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Classics</summary>
+                  <ul>
+                      <li><a href="index.html#witcher">The Witcher</a></li>
+                      <li><a href="index.html#oblivion">Oblivion</a></li>
+                      <li><a href="index.html#games">All games</a></li>
+                      <li><a href="index.html#featured">Featured game</a></li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Explore</summary>
+                  <ul>
+                      <li><a href="index.html#cyberpunk">Night City</a></li>
+                      <li><a href="index.html#ghostwire">Tokyo</a></li>
+                      <li><a href="index.html#witcher3">Fantasy worlds</a></li>
+                      <li><a href="index.html#octopath">Story adventures</a></li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Store</summary>
+                  <ul>
+                      <li><a href="index.html#games">Popular games</a></li>
+                      <li><a href="index.html#deals">Special offers</a></li>
+                      <li><a href="index.html#about">About us</a></li>
+                      <li><a href="index.html#contact">Contact us</a></li>
+                  </ul>
+                </details>
+              <a href="index.html#about">About</a>
+              <a href="#contact">Support</a>
+            </div>
+          </details>
         </div>
       </nav>
       <div class="menu">
@@ -54,7 +160,7 @@
           <h2 class="section-title">Popular games</h2>
           <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-3">
-              <article class="game">
+              <article class="game" id="cyberpunk">
                 <a href="product.html"><img src="images/cyberpunk.webp" alt="Cyberpunk 2077: Ultimate Edition" /></a>
                 <div class="game-info">
                   <h3><a href="product.html">Cyberpunk 2077: Ultimate Edition</a></h3>
@@ -65,7 +171,7 @@
               </article>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <article class="game">
+              <article class="game" id="ghostwire">
                 <img src="images/ghostwire.webp" alt="Ghostwire: Tokyo" />
                 <div class="game-info">
                   <h3>Ghostwire: Tokyo</h3>
@@ -76,7 +182,7 @@
               </article>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <article class="game">
+              <article class="game" id="oblivion">
                 <img src="images/oblivion.webp" alt="The Elder Scrolls IV: Oblivion" />
                 <div class="game-info">
                   <h3>The Elder Scrolls IV: Oblivion</h3>
@@ -87,7 +193,7 @@
               </article>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <article class="game">
+              <article class="game" id="octopath">
                 <img src="images/octopath.webp" alt="OCTOPATH TRAVELER" />
                 <div class="game-info">
                   <h3>OCTOPATH TRAVELER</h3>
@@ -98,7 +204,7 @@
               </article>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <article class="game">
+              <article class="game" id="witcher">
                 <img src="images/witcher.webp" alt="The Witcher: Enhanced Edition" />
                 <div class="game-info">
                   <h3>The Witcher: Enhanced Edition</h3>
@@ -109,7 +215,7 @@
               </article>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <article class="game">
+              <article class="game" id="neo">
                 <img src="images/neo.webp" alt="NEO: The World Ends with You" />
                 <div class="game-info">
                   <h3>NEO: The World Ends with You</h3>
@@ -120,7 +226,7 @@
               </article>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <article class="game">
+              <article class="game" id="phantom">
                 <img src="images/phantom.webp" alt="Cyberpunk 2077: Phantom Liberty" />
                 <div class="game-info">
                   <h3>Cyberpunk 2077: Phantom Liberty</h3>
@@ -131,7 +237,7 @@
               </article>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <article class="game">
+              <article class="game" id="witcher3">
                 <img src="images/witcher3.webp" alt="The Witcher 3: Wild Hunt — Remastered" />
                 <div class="game-info">
                   <h3>The Witcher 3: Wild Hunt — Remastered</h3>

@@ -1,25 +1,44 @@
-# Assignment 2
+# Midterm
 
-Name: Azeem Sarwar  
+Name: Azeem Sarwar
+
 Roll number: FA24-BCS-026
 
-Reference site: GOG  
-URL: https://www.gog.com/en/
+N = 26
 
-![GOG homepage](images/reference.png)
+BP = 626px
 
-Game Store follows GOG's dark header, sale banner, featured game, game cards and green cart buttons. It uses a smaller layout with a static banner, eight games and a basic footer.
+H = 182 degrees
 
-Open `index.html` in a browser. Click the featured game to open `product.html`.
-Bootstrap CSS loads from the CDN shown in Lecture 10, so an internet connection is needed. The cart buttons are static for Assignment 2.
+Accent colour: hsl(182, 70%, 45%)
 
-## Course material used
+K = 5
 
-- Lectures 3 and 4: HTML pages, links, images, semantic elements and the quantity input.
-- Lectures 5 and 6: external CSS, colours, fonts, backgrounds, margins, padding and borders.
-- Lecture 9: Flexbox for the navigation and banner content.
-- Lecture 10: Bootstrap navbar and grid, responsive images and media queries.
+Baseline commit: 8db7cec (`midterm: baseline copy`).
+Reference site: GOG, https://www.gog.com/en/.
 
-Course notes: https://cuinotes.com/web-technologies/
+## Task 1
 
-Artwork and visual reference: GOG. Prices are fixed examples for this assignment, not live offers. This is a coursework page, not a real store.
+Added Shop by Category to the existing navbar on both pages. At 626px and wider, hover or keyboard focus opens a five-column panel above the page, without moving the content.
+Below 626px, a details element opens the mobile menu and five separate details elements provide independent category accordions. No JavaScript is used.
+
+Changed files:
+- index.html: desktop and mobile navigation; product IDs for category links.
+- product.html: the same navigation.
+- styles.css: dropdown positioning, focus and hover rules, five-column grid and mobile breakpoint.
+- README.md: personal numbers and task notes.
+- screenshots/task1-375.png, screenshots/task1-626.png and screenshots/task1-1280.png: browser evidence for the final PDF.
+
+Checked at 375px, 626px and 1280px. Tab opens the desktop menu, leaving focus closes it, hovering into the panel keeps it open, and the mobile groups open independently.
+
+## Remaining work
+
+Task 2: checkout form.
+
+Task 3: cart badge and mini cart.
+
+Final submission PDF: add screenshots and changed code for all three tasks.
+
+## AI tools used
+
+OpenAI Codex (ChatGPT).

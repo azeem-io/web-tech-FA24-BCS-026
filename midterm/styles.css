@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #222;
+  color: #eee;
+  line-height: 1.5;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cda1ff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  background: #191919;
+  padding: 16px 0;
+}
+
+.logo {
+  background: #eee;
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.1;
+  padding: 6px;
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+}
+
+.cart {
+  font-size: 18px;
+}
+
+.menu {
+  padding: 12px 0;
+  background: #292929;
+}
+
+.menu .container {
+  display: flex;
+  gap: 32px;
+}
+
+.sale {
+  background-image: url("images/sale.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 24px;
+}
+
+.sale-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.sale h1 {
+  font-size: 28px;
+  background: #342443;
+  padding: 12px;
+  margin: 0;
+}
+
+.purple-btn {
+  background: #cda1ff;
+  color: #161616;
+  padding: 12px 24px;
+}
+
+.featured {
+  margin: 28px 0 40px;
+  background: #161616;
+}
+
+.featured img,
+.game img,
+.product-photo {
+  width: 100%;
+  display: block;
+}
+
+.feature-info {
+  padding: 24px;
+}
+
+.feature-info h2 {
+  font-size: 25px;
+}
+
+.small-title,
+.genre {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.section-title {
+  font-size: 24px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+}
+
+.game {
+  height: 100%;
+  background: #303030;
+}
+
+.game-info {
+  padding: 16px;
+}
+
+.game h3 {
+  font-size: 16px;
+  min-height: 48px;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.game .price {
+  text-align: right;
+}
+
+.shop-btn {
+  background: #a4d52b;
+  color: #151515;
+  font-weight: bold;
+}
+
+.shop-btn:hover {
+  background: #b9e743;
+  color: #151515;
+}
+
+.purple-btn:hover {
+  background: #dfc2ff;
+  color: #161616;
+}
+
+.game .shop-btn,
+.buy-box .shop-btn {
+  width: 100%;
+}
+
+.about {
+  margin: 40px 0;
+  padding: 24px 0;
+  border-top: 1px solid #555;
+}
+
+.about h2,
+.description h2,
+.buy-box h2,
+.details h2 {
+  font-size: 22px;
+}
+
+footer {
+  margin-top: 32px;
+  padding: 28px 0;
+  background: #191919;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+footer p {
+  margin-bottom: 12px;
+}
+
+.product-page {
+  padding-top: 24px;
+}
+
+.product-page h1 {
+  font-size: 30px;
+  margin: 20px 0 28px;
+}
+
+.back {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.description {
+  padding: 24px 0;
+}
+
+.buy-box {
+  padding: 24px;
+  background: #303030;
+}
+
+.buy-box input {
+  display: block;
+  width: 80px;
+  padding: 6px;
+  margin: 8px 0 20px;
+}
+
+.details {
+  margin-top: 24px;
+}
+
+@media (max-width: 767px) {
+  .links {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .menu .container {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .sale {
+    padding-top: 60px;
+  }
+
+  .sale-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sale h1,
+  .product-page h1 {
+    font-size: 24px;
+  }
+
+  .feature-info {
+    padding: 24px;
+  }
+}

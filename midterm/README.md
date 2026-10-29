@@ -61,9 +61,9 @@ Changed files:
 
 Checked adding all eight games, the four-copy limit, removing and re-enabling, empty-cart total, and opening/closing the panel. The panel fits at 375px, 626px and 1280px without horizontal overflow. The cart lives in memory on the listing page and resets when the page reloads.
 
-## Remaining work
+## Submission PDF
 
-Final submission PDF: add screenshots and changed code for all three tasks.
+FA24-BCS-026-midterm.pdf contains the name and roll number, screenshots of all three tasks at 375px, 626px and 1280px, followed by the added or changed code as selectable text under each task heading.
 
 ## AI tools used
 

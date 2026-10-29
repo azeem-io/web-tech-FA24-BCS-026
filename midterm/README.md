@@ -47,9 +47,21 @@ Changed files:
 
 Checked at 375px, 626px and 1280px with no horizontal overflow. Invalid phone and email values are rejected; the date limits are inclusive. Errors stay hidden on first load, appear after editing an invalid field, and disappear when corrected.
 
-## Remaining work
+## Task 3
 
-Task 3: cart badge and mini cart.
+Added a plain JavaScript cart on the listing page. Each click reads the name and price from the existing card and adds one item to an array; the badge counts all copies.
+Clicking the cart icon toggles the mini cart, with a Checkout link to Task 2. Remove updates the list and total, calculated with reduce(). Each game is limited to (26 mod 4) + 2 = 4 copies, then its button is disabled until a copy is removed.
+
+Changed files:
+- index.html: badge, mini-cart markup and script link.
+- script.js: adding, removing, counting, totals and button limits.
+- styles.css: badge, mini-cart panel, disabled buttons and a sticky header so the cart stays visible while scrolling.
+- README.md: Task 3 notes and checks.
+- screenshots/task3-375.png, screenshots/task3-626.png and screenshots/task3-1280.png: cart after adding two games.
+
+Checked adding all eight games, the four-copy limit, removing and re-enabling, empty-cart total, and opening/closing the panel. The panel fits at 375px, 626px and 1280px without horizontal overflow. The cart lives in memory on the listing page and resets when the page reloads.
+
+## Remaining work
 
 Final submission PDF: add screenshots and changed code for all three tasks.
 

@@ -69,7 +69,15 @@
             <a href="index.html#about">ABOUT</a>
             <a href="#contact">SUPPORT</a>
           </div>
-          <a class="cart" href="checkout.html" aria-label="Cart and checkout">&#128722; 0</a>
+          <div class="cart-box">
+            <a class="cart" href="checkout.html" aria-label="Cart and checkout" aria-expanded="false" aria-controls="mini-cart">&#128722; <span id="cart-count" aria-live="polite">0</span></a>
+            <section id="mini-cart" class="mini-cart" hidden>
+              <h2>Your cart</h2>
+              <ul id="cart-list"></ul>
+              <p>Total: $<span id="cart-total">0.00</span></p>
+              <a class="btn shop-btn" href="checkout.html">Checkout</a>
+            </section>
+          </div>
           <details class="mobile-nav">
             <summary class="menu-button">&#9776; Menu</summary>
             <div class="mobile-links">
@@ -266,5 +274,6 @@
         <p>&copy; 2026 Game Store. Azeem Sarwar.</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

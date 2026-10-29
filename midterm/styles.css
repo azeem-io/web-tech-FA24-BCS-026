@@ -387,3 +387,127 @@ header {
     padding: 8px 0;
   }
 }
+
+.checkout {
+  padding-top: 28px;
+  padding-bottom: 24px;
+}
+
+.checkout h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.checkout-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.checkout-form fieldset {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #555;
+  background: #292929;
+}
+
+.checkout-form legend {
+  float: none;
+  width: auto;
+  padding: 0 8px;
+  font-size: 22px;
+  color: hsl(182, 70%, 45%);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  padding-top: 9px;
+  font-size: 14px;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  min-width: 0;
+  padding: 9px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  background: #fff;
+  color: #222;
+  font: inherit;
+  font-size: 14px;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  outline: 2px solid hsl(182, 70%, 45%);
+}
+
+.error {
+  display: none;
+  margin: 6px 0 0;
+  color: #ff9292;
+  font-size: 13px;
+}
+
+.form-row input:user-invalid,
+.form-row select:user-invalid {
+  border: 2px solid #e64c4c;
+}
+
+.form-row input:user-invalid ~ .error,
+.form-row select:user-invalid ~ .error {
+  display: block;
+}
+
+.date-help {
+  margin: 6px 0 0;
+  color: #bbb;
+  font-size: 13px;
+}
+
+.checkout-button {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 12px;
+  background: hsl(182, 70%, 45%);
+  color: #111;
+  font-weight: bold;
+}
+
+.checkout-button:hover {
+  background: hsl(182, 70%, 55%);
+  color: #111;
+}
+
+@media (min-width: 626px) and (max-width: 767px) {
+  .checkout-form {
+    gap: 12px;
+  }
+
+  .checkout-form fieldset {
+    padding: 12px;
+  }
+
+  .form-row {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 8px;
+  }
+}
+
+@media (max-width: 625px) {
+  .checkout-form,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    gap: 6px;
+  }
+}

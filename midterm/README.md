@@ -31,9 +31,23 @@ Changed files:
 
 Checked at 375px, 626px and 1280px. Tab opens the desktop menu, leaving focus closes it, hovering into the panel keeps it open, and the mobile groups open independently.
 
-## Remaining work
+## Task 2
 
-Task 2: checkout form.
+Added checkout.html and linked it from the cart icon on all pages. The Contact and Delivery fieldsets use CSS Grid side by side from 626px, with labels on the left, and stack below that width.
+HTML required, email, pattern, min and max attributes handle validation. CSS :user-invalid shows red borders and messages after interaction, without JavaScript.
+
+Exam date: 29 October 2026. Delivery is allowed from 2026-10-29 through 2026-11-24, inclusive (26 days later).
+
+Changed files:
+- checkout.html: the two fieldsets, labels, required controls and full-width submit button.
+- index.html and product.html: cart links to checkout.
+- styles.css: form layout, accent colour and validation feedback.
+- README.md: Task 2 notes.
+- screenshots/midterm-task2-375.png, screenshots/midterm-task2-626.png and screenshots/midterm-task2-1280.png: checkout screenshots.
+
+Checked at 375px, 626px and 1280px with no horizontal overflow. Invalid phone and email values are rejected; the date limits are inclusive. Errors stay hidden on first load, appear after editing an invalid field, and disappear when corrected.
+
+## Remaining work
 
 Task 3: cart badge and mini cart.
 
